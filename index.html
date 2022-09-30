@@ -19,14 +19,16 @@
             <a-assets>
                 <a-asset-item
                     id="animated-asset"
-                    src="assets/gobun12/gobun12.gltf"
+                    src="assets/asset.gltf"
                 ></a-asset-item>
             </a-assets>
 
                 <a-entity
+                    look-at="[gps-camera]"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
-                    scale="0.1 0.1 0.1"
+                    scale="0.37222158338996225 0.37222158338996225 0.37222158338996225"
+                    gps-entity-place="latitude: 37.59142040920235; longitude: -233.05786139331764;"
                 ></a-entity>
 
             <a-camera gps-camera rotation-reader></a-camera>
